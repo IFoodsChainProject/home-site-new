@@ -1542,7 +1542,7 @@ background:url(../img/ellipsis_bg.png) repeat-y;}
     height: auto;
     /*padding: 80px 0px;*/
     padding: 80px 0px 40px 0;
-    background-image: url(../img/footer-bg.png);
+    /*background-image: url(../img/footer-bg.png);*/
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
