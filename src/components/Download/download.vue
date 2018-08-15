@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-6 ">
             <div class="phone">
-              <img src="/static/img/d1.png" alt="">
+              <img src="../../assets/images//d1.png" alt="">
             </div>
 
           </div>
@@ -19,10 +19,10 @@
                 <div class="row download-con">
                   <div class="download-box  col-xs-6 col-sm-6 col-md-6">
                     <div>
-                      <img src="/static/img/d3.png" alt="">  
+                      <img src="../../assets/images/d3.png" alt="">  
                     </div>
                     <!-- <p>{{$t('download.btn1')}}</p> -->
-                    <div class="download-btn" @click="downloadApk"><img src="/static/img/d4.png" alt=""> {{$t('download.btn1')}}</div>
+                    <div class="download-btn" @click="downloadApk"><img src="../../assets/images/d4.png" alt=""> {{$t('download.btn1')}}</div>
                   </div>
 <!--                   <div class="download-box  col-xs-6 col-sm-6 col-md-6">
                     <div><img src="/static/img/d3.png" alt=""></div>
