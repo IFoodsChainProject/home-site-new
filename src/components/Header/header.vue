@@ -12,7 +12,9 @@
                     <a href="javascript:;">
                       <select v-model="locale">
                         <option value="EN">EN</option>
+                        <!--
                         <option value="CH">中文</option>
+                        -->
                         <option value="KO">한국어</option>
                         <option value="VI">vi</option>
                       </select>
