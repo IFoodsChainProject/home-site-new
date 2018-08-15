@@ -7,6 +7,7 @@ export default {
     btn2:'IOS',
   },
 	home:{
+        navigatorTop:'APP DOWNLOAD',
 		 navigator: [
 		  {title:'홈페이지','path':'/'},
           {title:'생태','path':'/ecology'},
@@ -16,7 +17,8 @@ export default {
           {title:'프로베','path':'/#RoadMap'},
           {title:'노선도','path':'/Team'},
           {title:'팀뉴스','path':'/News'},
-            {title: 'APP Download', 'path': '/Download'},],
+            // {title: 'APP Download', 'path': '/Download'},
+            ],
 		 banner:{
 		 	banner1:{
 		 		slogan:'글로벌 식품 검측 공유 생태 만들기',

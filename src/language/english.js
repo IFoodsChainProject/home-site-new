@@ -10,6 +10,7 @@ export default {
     cooperative:{
       title: 'cooperative partner'
     },
+    navigatorTop:'APP DOWNLOAD',
 		navigator: [
           {title:'Home','path':'/'},
           {title:'eco Model','path':'/ecology'},
@@ -19,7 +20,7 @@ export default {
           {title:'RoadMap','path':'/#RoadMap'},
           {title:'Team','path':'/Team'},
           {title:'News','path':'/News'},
-           {title: 'APP Download', 'path': '/Download'},
+           // {title: 'APP Download', 'path': '/Download'},
 
 		],
 		banner:{

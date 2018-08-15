@@ -3,6 +3,24 @@
     <header>
         <!-- Nav Section -->
         <nav class="navbar navbar-default navbar-fixed-top nav-area" id="scroll-menu">
+          <div class="changeLang">
+              <div class="container">
+               <!--  <ul class="" >
+                  <li > -->
+                    <!-- <a >APP 下载</a> -->
+                    <router-link to="/download">{{$t('home.navigatorTop')}}</router-link>
+                    <a href="javascript:;">
+                      <select v-model="locale">
+                        <option value="EN">EN</option>
+                        <option value="CH">中文</option>
+                        <option value="KO">한국어</option>
+                        <option value="VI">vi</option>
+                      </select>
+                    </a>
+                <!--   </li>
+                </ul> -->
+              </div>
+          </div>
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -20,7 +38,7 @@
                         	<!-- <a href="javascript:;" :class="navIndex == index ? 'selected' : ''">{{item.title}}</a> -->
                         	 <router-link :to="item.path" >{{item.title}}</router-link>
                         </li>
-                         <li >
+<!--                          <li >
                          	<a href="javascript:;">
                          	    <select v-model="locale">
                               <option value="EN">EN</option>
@@ -29,7 +47,7 @@
                               <option value="VI">vi</option>
                             </select>
                          </a>
-                         </li>
+                         </li> -->
                     </ul>
 
                 </div>
@@ -104,7 +122,20 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style ang="less" scoped>
+<style scoped>
+.changeLang{
+  text-align: right;
+  background: #2E2E2E;
+}
+.changeLang a option{
+  color:#000;
+}
+.changeLang a{
+  color: #fff;
+  margin-left: 25px;
+      font-size: 16px;
+    line-height: 1.6;
+}
 select {
   /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
   /*border: solid 1px #000;*/

@@ -1,5 +1,6 @@
 export default {
   home: {
+    navigatorTop:'APP 下载',
     navigator: [
       {title: '首页', 'path': '/'},
       {title: '生态', 'path': '/ecology'},
@@ -8,8 +9,7 @@ export default {
       {title: '超级探针', 'path': '/superProbe'},
       {title: '路线图', 'path': '/#RoadMap'},
       {title: '团队', 'path': '/Team'},
-      {title: '新闻', 'path': '/News'},
-      {title: 'APP 下载', 'path': '/Download'},
+      {title: '新闻', 'path': '/News'}
       ],
     banner: {
       banner1: {

@@ -26,6 +26,7 @@ export default {
 		 },
 
 	home:{
+		    navigatorTop:'APP DOWNLOAD',
 		 navigator: [
 		  {title:'Trang chủ','path':'/'},
           {title:'Sinh thái','path':'/ecology'},
@@ -35,7 +36,8 @@ export default {
           {title:'Bản đồ đường','path':'/#RoadMap'},
           {title:'Đội nhóm ','path':'/Team'},
           {title:'Tin tức','path':'/News'},
-            {title: 'APP Download', 'path': '/Download'},],
+            // {title: 'APP Download', 'path': '/Download'},
+            ],
 		 banner:{
 		 	banner1:{
 		 		slogan:'Xây dựng sinh thái chia sẻ về kiểm tra thực phẩm toàn cầu',
