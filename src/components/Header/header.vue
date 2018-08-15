@@ -133,7 +133,7 @@ export default {
 .changeLang a{
   color: #fff;
   margin-left: 25px;
-      font-size: 16px;
+      font-size: 12px;
     line-height: 1.6;
 }
 select {

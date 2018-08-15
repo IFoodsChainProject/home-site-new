@@ -16,7 +16,7 @@ export default {
           {title:'eco Model','path':'/ecology'},
           {title:'application','path':'/application'},
           {title:'technology','path':'/technology'},
-          {title:'super Probe','path':'/superProbe'},
+          {title:'SUPROBE','path':'/superProbe'},
           {title:'RoadMap','path':'/#RoadMap'},
           {title:'Team','path':'/Team'},
           {title:'News','path':'/News'},
