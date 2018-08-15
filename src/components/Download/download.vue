@@ -19,7 +19,7 @@
                 <div class="row download-con">
                   <div class="download-box  col-xs-6 col-sm-6 col-md-6">
                     <div>
-                      <img src="../../assets/images/d3.png" alt="">  
+                      <img src="../../assets/images/erc20-wallet-qrcode.png" alt="">  
                     </div>
                     <!-- <p>{{$t('download.btn1')}}</p> -->
                     <div class="download-btn" @click="downloadApk"><img src="../../assets/images/d4.png" alt=""> {{$t('download.btn1')}}</div>
@@ -64,7 +64,7 @@
     },
     methods:{
       downloadApk:function(){
-        window.location.href="https://www.ifoodschain.com/ifood-android-V1.1.0.apk"
+        window.location.href="https://www.ifoodschain.com/ifood-android-V1.1.4.apk"
       },
       iosDownload:function(){
         this.isAlert = true;
