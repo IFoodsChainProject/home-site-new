@@ -1,4 +1,11 @@
 export default {
+   download:{
+    title:'IFOOD Wallet',
+    div1:'Create a global food testing and sharing ecosystem',
+    div2:'MAKE GLOBAL FOOD DETECTION SHARED ECO',
+    btn1:'Android',
+    btn2:'IOS',
+  },
 	home:{
     cooperative:{
       title: 'cooperative partner'
@@ -11,7 +18,8 @@ export default {
           {title:'super Probe','path':'/superProbe'},
           {title:'RoadMap','path':'/#RoadMap'},
           {title:'Team','path':'/Team'},
-          {title:'News','path':'/News'}
+          {title:'News','path':'/News'},
+           {title: 'APP Download', 'path': '/Download'},
 
 		],
 		banner:{
@@ -19,7 +27,8 @@ export default {
 				slogan:'Make global food detection shared eco',
 				logo:'IFOODS CHAIN',
 				description:'Based on the blockchain technology, DAI and intelligent device, Ifoods chain provides a platform for fast food detection and protects food safety.',
-				whitePaper:'White Paper'
+				whitePaperUrl:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/whitepaper/whitepaper_20180604_en.pdf',
+        whitePaper:'White Paper'
 			},
 			banner2: {
         img:'./static/img/superProbeText.png',

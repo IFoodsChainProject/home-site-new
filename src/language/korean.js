@@ -1,4 +1,11 @@
 export default {
+   download:{
+    title:'IFOOD Wallet',
+    div1:'Create a global food testing and sharing ecosystem',
+    div2:'MAKE GLOBAL FOOD DETECTION SHARED ECO',
+    btn1:'Android',
+    btn2:'IOS',
+  },
 	home:{
 		 navigator: [
 		  {title:'홈페이지','path':'/'},
@@ -8,13 +15,15 @@ export default {
           {title:'슈퍼','path':'/superProbe'},
           {title:'프로베','path':'/#RoadMap'},
           {title:'노선도','path':'/Team'},
-          {title:'팀뉴스','path':'/News'}],
+          {title:'팀뉴스','path':'/News'},
+            {title: 'APP Download', 'path': '/Download'},],
 		 banner:{
 		 	banner1:{
 		 		slogan:'글로벌 식품 검측 공유 생태 만들기',
 		 		logo:'IFOODS CHAIN',
 		 		description:' Ifoods chain 퍼블릭 블록체인은 블록체인기술, 스마트계약, DAI, 스마트장비 등 기술을 기반으로 개발한 것이다.Ifoods chain은 쾌속한 검측으로 소비자를 위해 식품안전 품질 데이터를 획득하는 수단을 제공하고 식품검측 전문가의 권익을 보호하며 식품안전사업의 발전을 추진할 것이다.',
-		 		whitePaper:'백서 보기'
+		 		whitePaperUrl:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/whitepaper/whitepaper_20180604_en.pdf',
+        whitePaper:'백서 보기'
 		 	},
 		 	banner2: {
         img:'./static/img/superprodehan.png',
@@ -46,6 +55,7 @@ export default {
       item5:'안전검측 지식산권 보호가 어렵다. ',
       item6:'검측시장 소비자측에 수단, 지식이 부족하다. '
     },
+   
     // 超级探针
      superProbe: {
       title:'슈퍼 프로베 ',
@@ -285,29 +295,29 @@ export default {
       des: ' Ifoods chain의 핵심멤버들은 각 관련업계 전문인사들로 구성되었다. \n'
     },
     origin: {
-      title: '창시자\n',
+      title: '재단 이사',
       founder: [
-        {
-          name: "카룽(卡隆）\n",
-          inicon: "static/img/in.png",
-          position: "창시자 & 재단 이사장\n",
-          img: "static/img/founder.jpg",
-          des: "2015년에 블록체인 영역에 진집, 블록체인 베테랑 종업자; 2016년 중국 블록체인 산업대회 총기획자, 블록체인+농업부분 포럼 사회자; 2018년 중국 금융 과기 창신대상 심사위원, 블록체인+농업 실험실 발기인; 북경시 사회 공시 건설 촉진회 성신 전문가 위원회 위원; MCA 국제 블록체인 창신 애플리케이션 연맹 전문가 위원회 위원; 제1발명자 신분으로 여러 항목 블록체인 관련 발명 특허 및 소프트웨어 저작권을 소유; 중국 식품 안전 소원 센터 행정주임; 북경시 교육 후방 구매 플랫폼 양광 무지개 식품 안전 고문. \n"
-        },
-        {
-          name: "판즈카이（范志凯）\n",
-          inicon: "static/img/in.png",
-          position: "창시자 & CEO\n",
-          img: "static/img/founder2.jpg",
-          des: "북경항공항천대학 기기과학 및 광전공정과 석사; 2013년에 블록체인을 접촉, 블록체인의 운영원리를 깊숙히 알고 있으며 디지털 제품 인터넷 거래의 운영 및 기획에 익숙; 세계 첨단 나노 회절발 센서 및 스마트 하드웨어 대한 깊이 있는 연구; 여러 인터넷 프로젝트 기획, 운영 경험; 국가 식품약 감독관리총구 정보화 관리 플렛폼 프로젝트 책임 경험.\n"
-        },
-        {
-          name: "Lin RooJee（미국)\n",
-          inicon: "static/img/in.png",
-          position: "창시자 & 수석 과학가\n",
-          img: "static/img/founder3.jpg",
-          des: "미국 조지아 대학교 식품과 박사; 전 미국 콘아그리 푸즈 그룹 기초과학매니저, 기술총감 및 인수합병 담당; 미국 국가 식품 안전 및 기술 센터 고문; 중국 육류 연구소 명예 소장; 미국 뉼리 웨즈 푸드 그룹 중국지역 총재; 캐프트 푸드 (북경) 유한공사 회장; 세계 여러 항 식품 과학기술 특허 소유; 식품개발, 생산, 검측, 기술우화 및 인공지능 애플리케이션에 극히 깊은 연구가 있음. \n"
-        }
+      {
+        name: "Lin RooJee（미국)",
+        inicon: "static/img/in.png",
+        position: "창시자&재단 이사",
+        img: "static/img/founder3.jpg",
+        des: "미국 조지아 대학교 식품과 박사; 전 미국 콘아그리 푸즈 그룹 기초과학매니저, 기술총감 및 인수합병 담당; 미국 국가 식품 안전 및 기술 센터 고문; 중국 육류 연구소 명예 소장; 미국 뉼리 웨즈 푸드 그룹 중국지역 총재; 캐프트 푸드 (북경) 유한공사 회장; 세계 여러 항 식품 과학기술 특허 소유; 식품개발, 생산, 검측, 기술우화 및 인공지능 애플리케이션에 극히 깊은 연구가 있음. \n"
+      },
+      {
+        name: "카룽",
+        inicon: "static/img/in.png",
+        position: "재단 이사",
+        img: "static/img/founder.jpg",
+        des: "2015년에 블록체인 영역에 진집, 블록체인 베테랑 종업자; 2016년 중국 블록체인 산업대회 총기획자, 블록체인+농업부분 포럼 사회자; 2018년 중국 금융 과기 창신대상 심사위원, 블록체인+농업 실험실 발기인; 북경시 사회 공시 건설 촉진회 성신 전문가 위원회 위원; MCA 국제 블록체인 창신 애플리케이션 연맹 전문가 위원회 위원; 제1발명자 신분으로 여러 항목 블록체인 관련 발명 특허 및 소프트웨어 저작권을 소유; 중국 식품 안전 소원 센터 행정주임; 북경시 교육 후방 구매 플랫폼 양광 무지개 식품 안전 고문. \n"
+      },
+      {
+        name: "판즈카이",
+        inicon: "static/img/in.png",
+        position: "재단 이사",
+        img: "static/img/founder2.jpg",
+        des: "북경항공항천대학 기기과학 및 광전공정과 석사; 2013년에 블록체인을 접촉, 블록체인의 운영원리를 깊숙히 알고 있으며 디지털 제품 인터넷 거래의 운영 및 기획에 익숙; 세계 첨단 나노 회절발 센서 및 스마트 하드웨어 대한 깊이 있는 연구; 여러 인터넷 프로젝트 기획, 운영 경험; 국가 식품약 감독관리총구 정보화 관리 플렛폼 프로젝트 책임 경험.\n"
+      }
 
       ]
     },

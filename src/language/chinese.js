@@ -9,13 +9,14 @@ export default {
       {title: '路线图', 'path': '/#RoadMap'},
       {title: '团队', 'path': '/Team'},
       {title: '新闻', 'path': '/News'},
-      {title: 'app下载', 'path': '/Download'},
+      {title: 'APP 下载', 'path': '/Download'},
       ],
     banner: {
       banner1: {
         slogan: '打造全球食品检测共享生态',
         logo: 'IFOODS CHAIN',
         description: '基于区块链技术、智能合约、DAI、智能设备等技术开发Ifoods chain公链。Ifoods chain为消费者提供快速检测食品安全质量数据的手段，保护食品检测专家的权益，推动食品安全事业的发展。',
+        whitePaperUrl:'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/whitepaper/whitepaper_20180607_cn.pdf',
         whitePaper: '查看白皮书'
       },
       banner2: {
@@ -152,6 +153,13 @@ export default {
     }
 
 
+  },
+  download:{
+    title:'IFOOD钱包',
+    div1:'打造全球食品检测共享生态',
+    div2:'MAKE GLOBAL FOOD DETECTION SHARED ECO',
+    btn1:'Android下载',
+    btn2:'IOS下载',
   },
   ecomodel: {
     banner: {
@@ -339,33 +347,34 @@ export default {
       title: '团队介绍',
       des: 'Ifoods Chain的核心团队是由在各个相关行业领域专业人士组成。'
     },
-    origin: {
-      title: '创始人',
-      founder: [
-        {
-          name: "卡隆",
-          inicon: "static/img/in.png",
-          position: "创始人&基金会理事长",
-          img: "static/img/founder.jpg",
-          des: "13 年的金融营销公关经验、 7 年农业及金融成功创业经历；2015年进入区块链，区块链资深从业者；原根源链创始人及执行董事；2016 年中国区块链产业大会总策划，区块链+农业分论坛主持人；2018 年中国金融科技创新奖评委区块链+农业实验室发起人；区块链专业推广机构融合传媒董事长；以第一发明人身份拥有多项区块链相关发明专利及软件著作权；中国食品安全中心执行主任；北京市教育后勤采购平台阳光彩虹食品安全顾问。"
-        },
-        {
-          name: "范志凯",
-          inicon: "static/img/in.png",
-          position: "创始人&CEO",
-          img: "static/img/founder2.jpg",
-          des: "北京航空航天大学仪器科学与光电工程硕士；2013 年接触区块链，深刻了解区块链运营原理、熟悉数字产品网上交易的运营及策划；深入研究全球前沿纳米光栅传感器及智能硬件；策划、运营过多个互联网项目；曾负责国家食药监总局信息化管理平台项目。"
-        },
-        {
-          name: "Lin RooJee （美国）",
-          inicon: "static/img/in.png",
-          position: "创始人&首席科学家",
-          img: "static/img/founder3.jpg",
-          des: "美国乔治亚大学食品学博士；曾任美国康尼格拉集团基础科学资深经理，技术总监及并购成员；美国国家食品安全及技术中心顾问；中国肉类研究所荣誉所长；美国纽利味食品集团中国区总裁；加福得食品(北京)有限公司董事长；拥有全球数项食品科技的专利；对食品研发、生产、检测，技术优化及人工智能的应用有极深入研究。"
-        }
-
-      ]
+origin: {
+  title: '基金会理事',
+  founder: [
+    {
+      name: "林汝吉博士",
+      inicon: "static/img/in.png",
+      position: "创始人&基金会理事",
+      img: "static/img/founder3.jpg",
+      des: "美国乔治亚大学食品学博士；曾任美国康尼格拉集团基础科学资深经理，技术总监及并购成员；美国国家食品安全及技术中心顾问；中国肉类研究所荣誉所长；美国纽利味食品集团中国区总裁；加福得食品(北京)有限公司董事长；拥有全球数项食品科技的专利；对食品研发、生产、检测，技术优化及人工智能的应用有极深入研究。"
     },
+    {
+      name: "卡隆",
+      inicon: "static/img/in.png",
+      position: "基金会理事",
+      img: "static/img/founder.jpg",
+      des: "13 年的金融营销公关经验、 7 年农业及金融成功创业经历；2015年进入区块链，区块链资深从业者；原根源链创始人及执行董事；2016 年中国区块链产业大会总策划，区块链+农业分论坛主持人；2018 年中国金融科技创新奖评委区块链+农业实验室发起人；区块链专业推广机构融合传媒董事长；以第一发明人身份拥有多项区块链相关发明专利及软件著作权；中国食品安全中心执行主任；北京市教育后勤采购平台阳光彩虹食品安全顾问。"
+    },
+    {
+      name: "范志凯",
+      inicon: "static/img/in.png",
+      position: "基金会理事",
+      img: "static/img/founder2.jpg",
+      des: "北京航空航天大学仪器科学与光电工程硕士；2013 年接触区块链，深刻了解区块链运营原理、熟悉数字产品网上交易的运营及策划；深入研究全球前沿纳米光栅传感器及智能硬件；策划、运营过多个互联网项目；曾负责国家食药监总局信息化管理平台项目。"
+    },
+
+
+  ]
+},
     core:{
       title:'运营团队',
       coreitems:[

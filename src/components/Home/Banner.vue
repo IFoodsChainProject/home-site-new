@@ -10,7 +10,7 @@
                         <h3>{{$t('home.banner.banner1.slogan')}}</h3>
                         <h1>IFOODS CHAIN</h1>
                         <p>{{$t('home.banner.banner1.description')}}</p >
-                        <a href="https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/whitepaper/whitepaper_20180604_en.pdf"  target="_blank" class="btn btn-default btn-sm-outline" role="button">{{$t('home.banner.banner1.whitePaper')}}</a>
+                        <a :href="$t('home.banner.banner1.whitePaperUrl')"  target="_blank" class="btn btn-default btn-sm-outline" role="button">{{$t('home.banner.banner1.whitePaper')}}</a>
                     </div>
                 </div>
             </div>

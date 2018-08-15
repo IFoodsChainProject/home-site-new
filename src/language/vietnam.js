@@ -1,4 +1,30 @@
 export default {
+	 download:{
+    title:'IFOOD Wallet',
+    div1:'Create a global food testing and sharing ecosystem',
+    div2:'MAKE GLOBAL FOOD DETECTION SHARED ECO',
+    btn1:'Android',
+    btn2:'IOS',
+  },
+		 painPoint:{
+		 	title:'Khó khăn trong ngành',
+		 	item1:'Kiến thức có liên quan về thực phẩm của người tiêu dùng không đủ',
+		 	item2:'Thời gian của phương thức kiểm tra truyền thống lâu, chi phí cao, quá trình rắc rối',
+		 	item3:'Phía cung cấp trên thị trường kiểm tra thiếu uy tín và kênh phân phối',
+		 	item4:'Thiếu biện pháp kiểm tra tiện lợi, chi phí thấp',
+		 	item5:'Khó bảo vệ quyền sở hữu trí tuệ về kiểm tra an toàn',
+		 	item6:'Phía người tiêu dùng trên thị trường kiểm tra thiếu biện pháp, kiến thức'
+		 },
+		 superProbe: {
+		 	title:'Super Probe',
+		 	des:'Hệ thống Super Probe là một loại thiết bị kiểm tra thực phẩm thông minh, là hình thức ứng dụng thành công để kiểm tra loại thực phẩm thịt do phòng thí nghiệm phần cứng thông minh Ifoods chain nghiên cứu chế tạo.',
+		 	advantagesDes:'Đối với bối cảnh người tiêu dùng mua hàng tại siêu thị, Super Probe do Ifoods chain thiết kế có những ưu thế sau:',
+		 	advantages1:'Tính kịp thời',
+		 	advantages2:'Tính nhanh chóng',
+		 	advantages3:'Tính tiện lợi',
+		 	readmore:'Tìm hiểu thêm >>'
+		 },
+
 	home:{
 		 navigator: [
 		  {title:'Trang chủ','path':'/'},
@@ -8,12 +34,14 @@ export default {
           {title:'Suprobe','path':'/superProbe'},
           {title:'Bản đồ đường','path':'/#RoadMap'},
           {title:'Đội nhóm ','path':'/Team'},
-          {title:'Tin tức','path':'/News'}],
+          {title:'Tin tức','path':'/News'},
+            {title: 'APP Download', 'path': '/Download'},],
 		 banner:{
 		 	banner1:{
 		 		slogan:'Xây dựng sinh thái chia sẻ về kiểm tra thực phẩm toàn cầu',
 		 		logo:'IFOODS CHAIN',
 		 		description:'Trên cơ sở kỹ thuật block chain, hợp đồng thông minh, DAI, thiết bị thông minh và các kỹ thuật khác, đã phát triển chuỗi Ifoods chain.Ifoods chain cung cấp cho người tiêu dùng phương pháp kiểm tra nhanh dữ liệu về chất lượng an toàn thực phẩm, bảo vệ quyền lợi của chuyên gia kiểm tra thực phẩm, thúc đẩy phát triển lĩnh vực an toàn thực phẩm.',
+		 	    whitePaperUrl:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/whitepaper/whitepaper_20180604_en.pdf',
 		 		whitePaper:'Xem sách trắng'
 		 	},
 			banner2: {
@@ -37,70 +65,53 @@ export default {
              {iconurl:'./static/img/icon (3).png',title:'Mạng lưới thương mại điện tử kiểu phân bố',des:'Trên cơ sở dữ liệu lớn mà hệ thống Probe có được, kỹ thuật block chain, AI Ifoods chain xây dựng DAPP thương mại điện tử kiểu phân bố, đảm bảo an toàn, chất lượng và tính có thể kiểm nghiệm được của thực phẩm phân bố qua thương mại điện tử.'},
 		 	]
 		 },
-		 painPoint:{
-		 	title:'Khó khăn trong ngành',
-		 	item1:'Kiến thức có liên quan về thực phẩm của người tiêu dùng không đủ',
-		 	item2:'Thời gian của phương thức kiểm tra truyền thống lâu, chi phí cao, quá trình rắc rối',
-		 	item3:'Phía cung cấp trên thị trường kiểm tra thiếu uy tín và kênh phân phối',
-		 	item4:'Thiếu biện pháp kiểm tra tiện lợi, chi phí thấp',
-		 	item5:'Khó bảo vệ quyền sở hữu trí tuệ về kiểm tra an toàn',
-		 	item6:'Phía người tiêu dùng trên thị trường kiểm tra thiếu biện pháp, kiến thức'
-		 },
-		 superProbe: {
-		 	title:'Super Probe',
-		 	des:'Hệ thống Super Probe là một loại thiết bị kiểm tra thực phẩm thông minh, là hình thức ứng dụng thành công để kiểm tra loại thực phẩm thịt do phòng thí nghiệm phần cứng thông minh Ifoods chain nghiên cứu chế tạo.',
-		 	advantagesDes:'Đối với bối cảnh người tiêu dùng mua hàng tại siêu thị, Super Probe do Ifoods chain thiết kế có những ưu thế sau:',
-		 	advantages1:'Tính kịp thời',
-		 	advantages2:'Tính nhanh chóng',
-		 	advantages3:'Tính tiện lợi',
-		 	readmore:'Tìm hiểu thêm >>'
-		 },
-		 roadMap:{
-		 	title:'Sơ đồ',
-
-		 	year2018:{
-		 		year:'2018',
-		 		month9:'Tháng 9',
-		 		event9:'Công bố phần cứng thông minh Super Probe phiên bản DEMO',
-		 		month10:'Tháng 10',
-		 		event10:'Thử nghiệm mẫu Super Probe trên toàn cầu',
-		 		month11:'Tháng 11',
-		 		event11:'Đưa lên trực tuyến cộng đồng phân bố Ifoods chain',
-
-
-		 	},
-		 	year2019:{
-		 		year:'2019',
-		 		month1:'Tháng 1',
-		 		event1:'Đầu dò siêu cấp bán ra toàn cầu',
-		 		month3:'Tháng 3',
-		 		event3:'Công bố kế hoạch giới thiệu đầu dò siêu cấp tại khu vực Trung Quốc',
-		 		month5:'Tháng 5',
-		 		event5:'Công bố kế hoạch giới thiệu đầu dò siêu cấp tại khu vực Âu Mỹ',
-		 		month7:'Tháng 7',
-		 		event7:'Công bố chức năng kiểm tra DAI',
-		 		month8:'Tháng 8',
-		 		event8:'Lễ ký kết cơ cấu lớn đầu dò siêu cấp',
-		 		month10:'Tháng 10',
-		 		event10:'Lượng tiêu thụ của đầu dò siêu cấp đạt 10.000 máy (dự kiến)',
-		 		month11:'Tháng 11',
-		 		event11:'Đưa ra thị trường ví tài sản kỹ thuật số DAPP đầu dò siêu cấp',
-		 		month12:'Tháng 12',
-		 		event12:'Đưa ra thị trường trang web Ifoods Chain',
-
-		 	},
-		 	year2020:{
-		 		year:'2020',
-		 		month6:'Tháng 06',
-		 		event6:'Công báo phần cứng thông minh kiểm tra các loại dầu',
-		 		month12:'Tháng 12',
-		 		event12:'Lượng tiêu thụ của đầu dò siêu cấp đạt 30.000 máy (dự kiến)',
-		 	}
-
-		 },
+		  
     cooperative:{
 		   title:'Đối tác\n'
      },
+     roadMap:{
+ title:'Sơ đồ',
+
+ year2018:{
+  year:'2018',
+  month9:'Tháng 9',
+  event9:'Công bố phần cứng thông minh Super Probe phiên bản DEMO',
+  month10:'Tháng 10',
+  event10:'Thử nghiệm mẫu Super Probe trên toàn cầu',
+  month11:'Tháng 11',
+  event11:'Đưa lên trực tuyến cộng đồng phân bố Ifoods chain',
+
+
+ },
+ year2019:{
+  year:'2019',
+  month1:'Tháng 1',
+  event1:'Đầu dò siêu cấp bán ra toàn cầu',
+  month3:'Tháng 3',
+  event3:'Công bố kế hoạch giới thiệu đầu dò siêu cấp tại khu vực Trung Quốc',
+  month5:'Tháng 5',
+  event5:'Công bố kế hoạch giới thiệu đầu dò siêu cấp tại khu vực Âu Mỹ',
+  month7:'Tháng 7',
+  event7:'Công bố chức năng kiểm tra DAI',
+  month8:'Tháng 8',
+  event8:'Lễ ký kết cơ cấu lớn đầu dò siêu cấp',
+  month10:'Tháng 10',
+  event10:'Lượng tiêu thụ của đầu dò siêu cấp đạt 10.000 máy (dự kiến)',
+  month11:'Tháng 11',
+  event11:'Đưa ra thị trường ví tài sản kỹ thuật số DAPP đầu dò siêu cấp',
+  month12:'Tháng 12',
+  event12:'Đưa ra thị trường trang web Ifoods Chain',
+
+ },
+ year2020:{
+  year:'2020',
+  month6:'Tháng 06',
+  event6:'Công báo phần cứng thông minh kiểm tra các loại dầu',
+  month12:'Tháng 12',
+  event12:'Lượng tiêu thụ của đầu dò siêu cấp đạt 30.000 máy (dự kiến)',
+ }
+
+},
 		 team:{
 		 	title:'团队',
 		 	des:'Ifoods chain 的核心团队是由在各个相关行业领域内浸淫多年的行业专业人士组成。',
@@ -289,31 +300,31 @@ team: {
       des: 'Đội ngũ nòng cốt của Ifoods chain gồm chuyên gia trong các lĩnh vực , các ngành có liên quan\n'
   },
   origin: {
-    title: 'Người sáng lập\n',
-      founder: [
+  title: 'Giám đốc quỹ',
+    founder: [
       {
-        name: "Ca Long (Ka Long) \n",
+        name: "Lin RooJee",
         inicon: "static/img/in.png",
-        position: "Người sáng lập và chủ tịch quỹ\n",
-        img: "static/img/founder.jpg",
-        des: "Năm 2015 gia nhập vào lĩnh vực block chain, người hoạt động lâu năm trong lĩnh vực block chain, Trưởng ban kế hoạch Đại hội ngành block chain Trung Quốc năm 2016, người chủ trì diễn đàn con block chain + nông nghiệp; người sáng lập phòng thí nghiệm block chain +nông nghiệp Ủy ban đánh giá sáng tạo khoa học công nghệ tài chính Trung Quốc năm 2018; Ủy viên Ủy ban tín nhiệm Hiệp ội xúc tiến xây dựng uy tín xã hội thành phố Bắc Kinh; Ủy viên Ủy ban chuyên gia liên kết ứng dụng sáng tạo block chain quốc tế MCA, với vai trò là người sáng chế đầu tiên, ông đã sở hữu nhiều bằng sáng chế và bản quyền tác giả phần mềm có liên quan tới block chain; Chủ nhiệm chấp hành trung tâm truy xuất nguồn gốc an toàn thực phẩm Trung Quốc; cố vấn an toàn của thực phẩm Sunshine Rainbow- diễn đàn thu mua hậu cần, giáo dục thành phố Bắc Kinh.\n"
-      },
-      {
-        name: "Phạm Chí Khải (Fan Zhi Kai)\n",
-        inicon: "static/img/in.png",
-        position: "Người sáng lập & CEO\n",
-        img: "static/img/founder2.jpg",
-        des: "Thạc sỹ khoa học thiết bị và công trình quang điện Trường đại học hàng không vũ trụ Bắc Kinh; năm 2013 tiếp xúc với block chain, tìm hiểu sâu sắc về nguyên lý vận hành của block chain, thành thạo về hoạt động kinh danh và lập kế hoạch đối với giao dịch sản phẩm số trực tuyến; nghiên cứu sâu về cảm biến mành nano và phần cứng thông minh đi đầu trên toàn cầu; lập kế hoạch, kinh doanh nhiều dự án trên mạng Internet; đã từngphụ trách dự án nền tảng quản lý thông tin hóa Tổng cục giám sát thực phẩm, dược phẩm Quốc gia.\n"
-      },
-      {
-        name: "Lin RooJee (người Mỹ)\n",
-        inicon: "static/img/in.png",
-        position: "Người sáng lập & nhà khoa học trưởng\n",
+        position: "Người sáng lập & Giám đốc quỹ",
         img: "static/img/founder3.jpg",
-        des: "Thạc sỹ thực phẩm học trường đại học Georgia Mỹ; đã từng đảm nhận vị trí giám đốc lâu năm về khoa học cơ bản, giám đốc kỹ thuật và thành viên sáp nhập của tập đoàn Conagra Mỹ; Cố vấn trung tâm an toàn thực phẩm và công nghệ Quốc gia Mỹ; viện trưởng danh dự viện nghiên cứu thịt Trung Quốc; Chủ tịch khu vực Trung Quốc tập đoàn thực phẩm Newly Weds Mỹ; Chủ tịch hội đồng quản trị công ty TNHH thực phẩm Caftfoods (Bắc Kinh); có một số bằng sáng chế về khoa học công nghệ thực phẩm toàn cầu; nghiên cứu vô cùng sâu sắc về nghiên cứu phát triển, sản xuất, kiểm tra thực phẩm, tối ưu hóa công nghệ và ứng dụng trí tuệ nhân tạo.\n"
-      }
+        des: "Ph. D. in food science, University of Georgia, USA; Served as a senior manager of science & technology, CTO, a member of M & A.Adviser to the national food safety & technology center of the United States; The honorary director of the China Meat Research Institute; Chairman of the new China food group, China; chairman of the food company (Beijing) Limited. Owns a number of patents in food technology, research, production, testing, and technology optimization. Deeply studied the application of artificial intelligence."
+      },
+    {
+      name: "Ca Long",
+      inicon: "static/img/in.png",
+      position: "Giám đốc quỹ",
+      img: "static/img/founder.jpg",
+      des: "Năm 2015 gia nhập vào lĩnh vực block chain, người hoạt động lâu năm trong lĩnh vực block chain, Trưởng ban kế hoạch Đại hội ngành block chain Trung Quốc năm 2016, người chủ trì diễn đàn con block chain + nông nghiệp; người sáng lập phòng thí nghiệm block chain +nông nghiệp Ủy ban đánh giá sáng tạo khoa học công nghệ tài chính Trung Quốc năm 2018; Ủy viên Ủy ban tín nhiệm Hiệp ội xúc tiến xây dựng uy tín xã hội thành phố Bắc Kinh; Ủy viên Ủy ban chuyên gia liên kết ứng dụng sáng tạo block chain quốc tế MCA, với vai trò là người sáng chế đầu tiên, ông đã sở hữu nhiều bằng sáng chế và bản quyền tác giả phần mềm có liên quan tới block chain; Chủ nhiệm chấp hành trung tâm truy xuất nguồn gốc an toàn thực phẩm Trung Quốc; cố vấn an toàn của thực phẩm Sunshine Rainbow- diễn đàn thu mua hậu cần, giáo dục thành phố Bắc Kinh.\n"
+    }, {
+      name: "Steven Van",
+      inicon: "static/img/in.png",
+      position: "Giám đốc quỹ",
+      img: "static/img/founder2.jpg",
+      des: "Thạc sỹ khoa học thiết bị và công trình quang điện Trường đại học hàng không vũ trụ Bắc Kinh; năm 2013 tiếp xúc với block chain, tìm hiểu sâu sắc về nguyên lý vận hành của block chain, thành thạo về hoạt động kinh danh và lập kế hoạch đối với giao dịch sản phẩm số trực tuyến; nghiên cứu sâu về cảm biến mành nano và phần cứng thông minh đi đầu trên toàn cầu; lập kế hoạch, kinh doanh nhiều dự án trên mạng Internet; đã từngphụ trách dự án nền tảng quản lý thông tin hóa Tổng cục giám sát thực phẩm, dược phẩm Quốc gia.\n"
+    }
+  ]
 
-    ]
+
   },
   core:{
     title:'Đội ngũ kinh doanh\n',
