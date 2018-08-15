@@ -125,7 +125,7 @@ export default {
 <style scoped>
 .changeLang{
   text-align: right;
-  background: #2E2E2E;
+  background: rgba(30, 30, 30, 0.9);
 }
 .changeLang a option{
   color:#000;
