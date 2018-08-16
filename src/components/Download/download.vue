@@ -13,7 +13,7 @@
           <div class="col-sm-12 col-md-6">
             <div class="downloads">
               <h2>{{$t('download.title')}}</h2>
-              <div class="text-left">{{$t('download.div1')}}</div>
+              <!-- <div class="text-left">{{$t('download.div1')}}</div> -->
               <div class="text-left">{{$t('download.div2')}}</div>
               <!-- <div class="download-alt"> -->
                 <div class="row download-con">

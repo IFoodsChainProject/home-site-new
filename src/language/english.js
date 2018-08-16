@@ -316,6 +316,13 @@ export default {
       title: 'Director of the foundation',
       founder: [
         {
+          name: "Lin RooJee (U.S.)",
+          inicon: "static/img/in.png",
+          position: "Founder & Director of the foundation",
+          img: "static/img/founder3.jpg",
+          des: "Ph. D. in food science, University of Georgia, USA; Served as a senior manager of science & technology, CTO, a member of M & A.Adviser to the national food safety & technology center of the United States; The honorary director of the China Meat Research Institute; Chairman of the new China food group, China; chairman of the food company (Beijing) Limited. Owns a number of patents in food technology, research, production, testing, and technology optimization. Deeply studied the application of artificial intelligence."
+        },
+        {
           name: "Kallon",
           inicon: "static/img/in.png",
           position: "Director of the foundation",
@@ -328,15 +335,7 @@ export default {
           position: "Director of the foundation",
           img: "static/img/founder2.jpg",
           des: "Master's degree in Instrument Science and Optoelectronics Engineering, Beijing University of Aeronautics and Astronautics. In 2013, majored in the block chain, deeply understood the chain operation principles and familiar with the operation and planning of digital products online transactions. In depth research on global front raster sensors and intelligent hardware; Planning and operating over a number of Internet projects; Responsible for the information management platform project of the State Food and drug administration."
-        },
-        {
-          name: "Lin RooJee (U.S.)",
-          inicon: "static/img/in.png",
-          position: "Founder & Director of the foundation",
-          img: "static/img/founder3.jpg",
-          des: "Ph. D. in food science, University of Georgia, USA; Served as a senior manager of science & technology, CTO, a member of M & A.Adviser to the national food safety & technology center of the United States; The honorary director of the China Meat Research Institute; Chairman of the new China food group, China; chairman of the food company (Beijing) Limited. Owns a number of patents in food technology, research, production, testing, and technology optimization. Deeply studied the application of artificial intelligence."
         }
-
       ]
     },
     core:{
