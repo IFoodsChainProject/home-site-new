@@ -64,7 +64,7 @@
     },
     methods:{
       downloadApk:function(){
-        window.location.href="https://www.ifoodschain.com/ifood-android-V1.1.4.apk"
+        window.location.href="https://www.ifoodschain.com/ifood-android-V1.1.6.apk"
       },
       iosDownload:function(){
         this.isAlert = true;
