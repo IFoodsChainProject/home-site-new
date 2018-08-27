@@ -43,7 +43,8 @@ export default {
 		 		slogan:'Xây dựng sinh thái chia sẻ về kiểm tra thực phẩm toàn cầu',
 		 		logo:'IFOODS CHAIN',
 		 		description:'Trên cơ sở kỹ thuật block chain, hợp đồng thông minh, DAI, thiết bị thông minh và các kỹ thuật khác, đã phát triển chuỗi Ifoods chain.Ifoods chain cung cấp cho người tiêu dùng phương pháp kiểm tra nhanh dữ liệu về chất lượng an toàn thực phẩm, bảo vệ quyền lợi của chuyên gia kiểm tra thực phẩm, thúc đẩy phát triển lĩnh vực an toàn thực phẩm.',
-		 	    whitePaperUrl:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/whitepaper/whitepaper_20180604_en.pdf',
+		 	    whitePaperUrl:'{0}',
+		 	    // whitePaperUrl:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/whitepaper/whitepaper_20180604_en.pdf',
 		 		whitePaper:'Xem sách trắng'
 		 	},
 			banner2: {
@@ -311,19 +312,19 @@ team: {
         img: "static/img/founder3.jpg",
         des: "Ph. D. in food science, University of Georgia, USA; Served as a senior manager of science & technology, CTO, a member of M & A.Adviser to the national food safety & technology center of the United States; The honorary director of the China Meat Research Institute; Chairman of the new China food group, China; chairman of the food company (Beijing) Limited. Owns a number of patents in food technology, research, production, testing, and technology optimization. Deeply studied the application of artificial intelligence."
       },
-    {
-      name: "Ca Long",
-      inicon: "static/img/in.png",
-      position: "Giám đốc quỹ",
-      img: "static/img/founder.jpg",
-      des: "Năm 2015 gia nhập vào lĩnh vực block chain, người hoạt động lâu năm trong lĩnh vực block chain, Trưởng ban kế hoạch Đại hội ngành block chain Trung Quốc năm 2016, người chủ trì diễn đàn con block chain + nông nghiệp; người sáng lập phòng thí nghiệm block chain +nông nghiệp Ủy ban đánh giá sáng tạo khoa học công nghệ tài chính Trung Quốc năm 2018; Ủy viên Ủy ban tín nhiệm Hiệp ội xúc tiến xây dựng uy tín xã hội thành phố Bắc Kinh; Ủy viên Ủy ban chuyên gia liên kết ứng dụng sáng tạo block chain quốc tế MCA, với vai trò là người sáng chế đầu tiên, ông đã sở hữu nhiều bằng sáng chế và bản quyền tác giả phần mềm có liên quan tới block chain; Chủ nhiệm chấp hành trung tâm truy xuất nguồn gốc an toàn thực phẩm Trung Quốc; cố vấn an toàn của thực phẩm Sunshine Rainbow- diễn đàn thu mua hậu cần, giáo dục thành phố Bắc Kinh.\n"
-    }, {
-      name: "Steven Van",
-      inicon: "static/img/in.png",
-      position: "Giám đốc quỹ",
-      img: "static/img/founder2.jpg",
-      des: "Thạc sỹ khoa học thiết bị và công trình quang điện Trường đại học hàng không vũ trụ Bắc Kinh; năm 2013 tiếp xúc với block chain, tìm hiểu sâu sắc về nguyên lý vận hành của block chain, thành thạo về hoạt động kinh danh và lập kế hoạch đối với giao dịch sản phẩm số trực tuyến; nghiên cứu sâu về cảm biến mành nano và phần cứng thông minh đi đầu trên toàn cầu; lập kế hoạch, kinh doanh nhiều dự án trên mạng Internet; đã từngphụ trách dự án nền tảng quản lý thông tin hóa Tổng cục giám sát thực phẩm, dược phẩm Quốc gia.\n"
-    }
+    // {
+    //   name: "Ca Long",
+    //   inicon: "static/img/in.png",
+    //   position: "Giám đốc quỹ",
+    //   img: "static/img/founder.jpg",
+    //   des: "Năm 2015 gia nhập vào lĩnh vực block chain, người hoạt động lâu năm trong lĩnh vực block chain, Trưởng ban kế hoạch Đại hội ngành block chain Trung Quốc năm 2016, người chủ trì diễn đàn con block chain + nông nghiệp; người sáng lập phòng thí nghiệm block chain +nông nghiệp Ủy ban đánh giá sáng tạo khoa học công nghệ tài chính Trung Quốc năm 2018; Ủy viên Ủy ban tín nhiệm Hiệp ội xúc tiến xây dựng uy tín xã hội thành phố Bắc Kinh; Ủy viên Ủy ban chuyên gia liên kết ứng dụng sáng tạo block chain quốc tế MCA, với vai trò là người sáng chế đầu tiên, ông đã sở hữu nhiều bằng sáng chế và bản quyền tác giả phần mềm có liên quan tới block chain; Chủ nhiệm chấp hành trung tâm truy xuất nguồn gốc an toàn thực phẩm Trung Quốc; cố vấn an toàn của thực phẩm Sunshine Rainbow- diễn đàn thu mua hậu cần, giáo dục thành phố Bắc Kinh.\n"
+    // }, {
+    //   name: "Steven Van",
+    //   inicon: "static/img/in.png",
+    //   position: "Giám đốc quỹ",
+    //   img: "static/img/founder2.jpg",
+    //   des: "Thạc sỹ khoa học thiết bị và công trình quang điện Trường đại học hàng không vũ trụ Bắc Kinh; năm 2013 tiếp xúc với block chain, tìm hiểu sâu sắc về nguyên lý vận hành của block chain, thành thạo về hoạt động kinh danh và lập kế hoạch đối với giao dịch sản phẩm số trực tuyến; nghiên cứu sâu về cảm biến mành nano và phần cứng thông minh đi đầu trên toàn cầu; lập kế hoạch, kinh doanh nhiều dự án trên mạng Internet; đã từngphụ trách dự án nền tảng quản lý thông tin hóa Tổng cục giám sát thực phẩm, dược phẩm Quốc gia.\n"
+    // }
   ]
 
 
@@ -332,8 +333,8 @@ team: {
     title:'Đội ngũ kinh doanh\n',
       coreitems:[
       {name:'Lưu Nguyên (Liu Yuan)',img:'static/img/liuyuan.png',position:"CTO",des:"Người tin và truyền bá sớm về lĩnh vực block chain, tinh thông mạng p2p, thuật toán nhận thức chung, bảo mật phi đối xứng, kết cấu dữ liệu chuỗi khối, hợp đồng thông minh và các nguyên lý thực hiện công nghệ khác trong lĩnh vực block chain, nghiên cứu toàn diện về chuỗi công công mang tính tiêu biểu như BTC, ETH, NEO, EOS, hiểu biết sâu sắc về bối cảnh ứng ứng chuỗi công cộng, chuỗi liên minh, chuỗi cá nhân, thiết kế và thực hiện phương án block chain hóa  tầng đáy đối với nhiều ứng dụng trong nhiều ngành. Như: trinity trên cơ sở NEO, hệ thống màu sắc trên cơ sở ETH, giải pháp block chain hóa ngành điện lực v.v... Có 11 năm kinh nghiệm trong nghiên cứu sản phẩm cơ sở vật chất mạng Internet, đã từng làm việc tại China Telecom, NOKIA, HUAWEI v.v..., sản phẩm trao đổi cốt lõi truyền thông số, trạm thông tin không dây và sản phẩm bộ điều khiển, sản phẩm thuật toán đám mây trên cơ sở ảo hóa kvm được nghiên cứu và phát triển đã lần lượt mở ra thời đại trao đổi cốt lõi 100GE, thời đại mạng Internet di động và thời đại thuật toán đám mây. Tin tưởng vào sự phát triển của lĩnh vực block chain, chúng tôi phải bước vào thời đại mới về truyền tải giá trị mang tính cách mạng.\n"},
-      {name:"Tôn Chí Vỹ (Sun Zhi Wei)\n",inicon:"static/img/in.png",inUrl:"https://www.linkedin.com/in/sun-zhiwei-25a93137/",img:"static/img/sunzhiwei.png",position:"COO",des:"MBA đại học công nghệ Bắc Kinh; năm 2015 tiếp xúc với block chain, cung cấp thiết kế phương án tư vấn kinh doanh cho nhiều dự án block chain, gồm xây dựng đội ngũ dự án, quảng bá truyền thông, xây dựng kinh doanh cộng đồng, quản lý giá trị tiền tê v.v…, lần lượt làm việc tại Tập đoàn ô tô China North Trung Quốc, Tập đoàn ô tô Bắc Kinh, các tổ chức tư vấn quản lý và công ty đầu tư nổi tiếng; cung cấp kế hoạch chiến lược, phương án đầu tư, góp vốn và thiết kế mô hình thương mại cho nhiều công ty cổ phiếu A niêm yết trên sàn chứng khoán.\n"},
-      {name:"Lãnh Lâm (Leng Lin)",position:"CMO",img:"static/img/lenglin.jpg",des:" Có 7 năm kinh nghiệm về dịch vụ quảng bá marketing ngành tài chính, có kinh nghiệm làm việc tại các công ty tài chính, khoa học công nghệ Internet dẫn đầu trong ngành dịch vụ, thành thạo phương án marketing trong môi trường truyền thông mới; hiểu biết sâu sắc về block chain, truyền thông tài chính kinh tế và cộng đồng.\n"},
+      // {name:"Tôn Chí Vỹ (Sun Zhi Wei)\n",inicon:"static/img/in.png",inUrl:"https://www.linkedin.com/in/sun-zhiwei-25a93137/",img:"static/img/sunzhiwei.png",position:"COO",des:"MBA đại học công nghệ Bắc Kinh; năm 2015 tiếp xúc với block chain, cung cấp thiết kế phương án tư vấn kinh doanh cho nhiều dự án block chain, gồm xây dựng đội ngũ dự án, quảng bá truyền thông, xây dựng kinh doanh cộng đồng, quản lý giá trị tiền tê v.v…, lần lượt làm việc tại Tập đoàn ô tô China North Trung Quốc, Tập đoàn ô tô Bắc Kinh, các tổ chức tư vấn quản lý và công ty đầu tư nổi tiếng; cung cấp kế hoạch chiến lược, phương án đầu tư, góp vốn và thiết kế mô hình thương mại cho nhiều công ty cổ phiếu A niêm yết trên sàn chứng khoán.\n"},
+      // {name:"Lãnh Lâm (Leng Lin)",position:"CMO",img:"static/img/lenglin.jpg",des:" Có 7 năm kinh nghiệm về dịch vụ quảng bá marketing ngành tài chính, có kinh nghiệm làm việc tại các công ty tài chính, khoa học công nghệ Internet dẫn đầu trong ngành dịch vụ, thành thạo phương án marketing trong môi trường truyền thông mới; hiểu biết sâu sắc về block chain, truyền thông tài chính kinh tế và cộng đồng.\n"},
       {name:"Phùng Lệ Sảng (Feng Li Shuang )",img:"static/img/fenglishuang.png",position:" Nhà khoa học trưởng về phần cứng",des:"Người hướng dẫn nghiên cứu sinh, tiến sỹ đại học hàng không vũ trụ Bắc Kinh, phó chủ nghiệm trung tâm đo lường và điều khiển micro và nano; được tuyên dương là một trong số \"863\" tập thể và cá nhân tiên tiến Quốc gia; giành được 1 giải thưởng sáng chế công nghệ cấp tỉnh, 2 giải thưởng tiến bộ công nghệ, 18 bằng sáng chế Trung Quốc; đã trình bày hơn 100 bài luận văn học tập tại các tập san và hội nghị trong và ngoài nước, trong đó có hơn 20 bài được SCI thu thập.\n"}
     ],
   },

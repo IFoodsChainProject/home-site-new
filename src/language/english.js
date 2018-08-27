@@ -28,7 +28,8 @@ export default {
 				slogan:'Make global food detection shared eco',
 				logo:'IFOODS CHAIN',
 				description:'Based on the blockchain technology, DAI and intelligent device, Ifoods chain provides a platform for fast food detection and protects food safety.',
-				whitePaperUrl:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/whitepaper/whitepaper_20180604_en.pdf',
+				whitePaperUrl:'{0}',
+        // whitePaperUrl:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/whitepaper/whitepaper_20180604_en.pdf',
         whitePaper:'White Paper'
 			},
 			banner2: {
@@ -322,28 +323,28 @@ export default {
           img: "static/img/founder3.jpg",
           des: "Ph. D. in food science, University of Georgia, USA; Served as a senior manager of science & technology, CTO, a member of M & A.Adviser to the national food safety & technology center of the United States; The honorary director of the China Meat Research Institute; Chairman of the new China food group, China; chairman of the food company (Beijing) Limited. Owns a number of patents in food technology, research, production, testing, and technology optimization. Deeply studied the application of artificial intelligence."
         },
-        {
-          name: "Kallon",
-          inicon: "static/img/in.png",
-          position: "Director of the foundation",
-          img: "static/img/founder.jpg",
-          des: "In 2015, entered the field of block chain, the senior practitioner of block chain. 2016 China block chain industry conference general planning, block chain + agriculture sub forum host; 2018 China financial science and Technology Innovation Award Committee Block chain + agricultural laboratory promoter; Member of integrity Committee of Beijing Society for promoting public trust; MCA International District chain innovation application alliance expert committe member In the first inventor's identity, owns a number of block chain related invention patents and software copyright. Executive director of China's food safety traceability center; Beijing Education logistics procurement platform sunshine Rainbow food safety consultant."
-        },
-        {
-          name: "Steven Van",
-          inicon: "static/img/in.png",
-          position: "Director of the foundation",
-          img: "static/img/founder2.jpg",
-          des: "Master's degree in Instrument Science and Optoelectronics Engineering, Beijing University of Aeronautics and Astronautics. In 2013, majored in the block chain, deeply understood the chain operation principles and familiar with the operation and planning of digital products online transactions. In depth research on global front raster sensors and intelligent hardware; Planning and operating over a number of Internet projects; Responsible for the information management platform project of the State Food and drug administration."
-        }
+        // {
+        //   name: "Kallon",
+        //   inicon: "static/img/in.png",
+        //   position: "Director of the foundation",
+        //   img: "static/img/founder.jpg",
+        //   des: "In 2015, entered the field of block chain, the senior practitioner of block chain. 2016 China block chain industry conference general planning, block chain + agriculture sub forum host; 2018 China financial science and Technology Innovation Award Committee Block chain + agricultural laboratory promoter; Member of integrity Committee of Beijing Society for promoting public trust; MCA International District chain innovation application alliance expert committe member In the first inventor's identity, owns a number of block chain related invention patents and software copyright. Executive director of China's food safety traceability center; Beijing Education logistics procurement platform sunshine Rainbow food safety consultant."
+        // },
+        // {
+        //   name: "Steven Van",
+        //   inicon: "static/img/in.png",
+        //   position: "Director of the foundation",
+        //   img: "static/img/founder2.jpg",
+        //   des: "Master's degree in Instrument Science and Optoelectronics Engineering, Beijing University of Aeronautics and Astronautics. In 2013, majored in the block chain, deeply understood the chain operation principles and familiar with the operation and planning of digital products online transactions. In depth research on global front raster sensors and intelligent hardware; Planning and operating over a number of Internet projects; Responsible for the information management platform project of the State Food and drug administration."
+        // }
       ]
     },
     core:{
       title:'Core team',
       coreitems:[
         {name:'Liu Yuan',img:'static/img/liuyuan.png',position:"CTO",des:"A believer and early preacher of the block chain industry, proficient in the principle of P2P network, consensus algorithm, asymmetric encryption, block chain data structure, smart contract and so on, and have a comprehensive study on representative public chains such as BTC, ETH, NEO, EOS and so on. Deep application scenes of the public chain, the alliance chain and the private chain. Carried out the block chaininfrastructure solution design and landing for many industries, multiple applications, such as Trinity based on NEO, ETH based color system, and block chain solution for power industry.11 years of experience in the R & D of Internet infrastructure products, once served in China Telecom, NOKIA, HUAWEI and so on, several core exchange products, wireless communication base stations and controller products, and KVM virtualized cloud computing products have created the era of 100GE core exchange, mobile Internet era and cloud computing era. Firmly believe that with the development of block chain industry, we will enter a new era of revolutionary value transmission."},
-        {name:"Sun Zhiwei ",inicon:"static/img/in.png",inUrl:"https://www.linkedin.com/in/sun-zhiwei-25a93137/",img:"static/img/sunzhiwei.png",position:"COO",des:"MBA of Beijing Institute of Technology;In 2015, contacted block chain, provided the design of operation consultation for multiple block chain projects, including project team building, media promotion, community construction and operation, currency value management and so on.Worked in China North car group, Beijing automobile group, famousmanagement consulting organization and Investment Company.Provided strategic planning, investment and financing and business model design for A listed companies."},
-        {name:"Alin",position:"CMO",img:"static/img/lenglin.jpg",des:" 7 years marketing service experience in financial industryServed leading Internet finance and technology companies in the industry；Familiar with marketing methods in the new media environment.Maintain in-depth communication with blockchain、financial media and the community."},
+        // {name:"Sun Zhiwei ",inicon:"static/img/in.png",inUrl:"https://www.linkedin.com/in/sun-zhiwei-25a93137/",img:"static/img/sunzhiwei.png",position:"COO",des:"MBA of Beijing Institute of Technology;In 2015, contacted block chain, provided the design of operation consultation for multiple block chain projects, including project team building, media promotion, community construction and operation, currency value management and so on.Worked in China North car group, Beijing automobile group, famousmanagement consulting organization and Investment Company.Provided strategic planning, investment and financing and business model design for A listed companies."},
+        // {name:"Alin",position:"CMO",img:"static/img/lenglin.jpg",des:" 7 years marketing service experience in financial industryServed leading Internet finance and technology companies in the industry；Familiar with marketing methods in the new media environment.Maintain in-depth communication with blockchain、financial media and the community."},
         {name:"Feng Lishuang ",img:"static/img/fenglishuang.png",position:"Chief hardware scientist",des:"Beijing University of Aeronautics and Astronautics, doctoral supervisor, deputy director of micro and nano measurement and control center;Won the national '863 ' advanced collective and individual commendation;Focus on MEMS sensor research;It has won 1 provincial and ministerial level technological invention awards, 2 technological progress awards and 18 Chinese invention patents.More than 100 academic papers have been published in journals and conferences at home and abroad, including more than 20 in SCI."}
       ],
     },

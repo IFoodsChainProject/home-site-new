@@ -229,11 +229,12 @@
           <div class="col-xs-12 foo" data-sr='enter'>
             <div id="video" class="owl-carousel video-silder ">
               <div class="item">
-                <video src="https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/videos/ifoodschain-en.mp4"
-                       controls poster="../../assets/images/video/ifoodschainVideoBannerEn.jpg"></video>
+               <!--  <video src="https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/videos/ifoodschain-en.mp4"
+                       controls poster="../../assets/images/video/ifoodschainVideoBannerEn.jpg"></video> --> 
+                 <video :src="sources.videoEn"  controls poster="../../assets/images/video/ifoodschainVideoBannerEn.jpg"></video>
               </div>
               <div class="item">
-                <video src="https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/videos/ifoodschain-cn.mp4"
+                <video :src="sources.videoCn"
                        controls poster="../../assets/images/video/ifoodschainVideoBanner.jpg"></video>
               </div>
 
@@ -504,13 +505,15 @@
   import Top from '../Header/header.vue'
   import Bottom from '../Footer/Footer.vue'
   import Banner from './Banner.vue'
-  import Swiper from 'swiper'
+  // import Swiper from 'swiper'
   import owlCarousel from '../../../static/js/owl.carousel.min.js'
   import vivaTimeline from '../../../static/js/jquery.eeyellow.Timeline.js'
   import Team from './Team.vue'
   import News from './News.vue'
   import Partners from './Partners.vue'
-
+    import Cookies from 'js-cookie'
+// 中央事件
+import Bridge from '../../assets/js/bridge.js'
   export default {
     name: 'home',
     components: {
@@ -523,12 +526,22 @@
     },
     data() {
       return {
-        msg: 'Welcome to Your Vue.js App',
-        loading:true
+        loading:true,
+        sources:''
       }
     },
-
+    created(){
+      // Bridge.$on('videoUrl',(e)=>{
+      //   // alert(e)
+      //   this.sources = e;
+      // })    
+      this.getVideoUrl();
+    },
     methods: {
+      getVideoUrl:function(){
+         this.sources = JSON.parse(Cookies.get('source'));
+         console.log(this.sources)
+      },
       navStyle() {
         $(window).scroll(function () {
           var wScroll = $(this).scrollTop();
@@ -586,21 +599,21 @@
           autoplayTimeout: 100000,
         });
       },
-      _initswiper() {
-        const container = this.$refs.swiper;
-        new Swiper(container, {})
+      // _initswiper() {
+      //   const container = this.$refs.swiper;
+      //   new Swiper(container, {})
 
-      },
-      _initVideoSwiper() {
-        const container = this.$refs.videoSwiper;
-        const videoPagination = this.$refs.videoPagination;
-        let config = {
-          pagination: {
-            el: videoPagination,
-          },
-        }
-        new Swiper(container, config);
-      },
+      // },
+      // _initVideoSwiper() {
+      //   const container = this.$refs.videoSwiper;
+      //   const videoPagination = this.$refs.videoPagination;
+      //   let config = {
+      //     pagination: {
+      //       el: videoPagination,
+      //     },
+      //   }
+      //   new Swiper(container, config);
+      // },
       hideItem(ele) {
         $.each(ele, function (i, e) {
           $(e).hide()
@@ -631,8 +644,8 @@
 
     },
     mounted() {
-      this._initswiper();
-      this._initVideoSwiper();
+      // this._initswiper();
+      // this._initVideoSwiper();
       this.timeLine();
       this.about_slider_carousel();
       this.video();

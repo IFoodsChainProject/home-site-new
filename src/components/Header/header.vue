@@ -63,20 +63,28 @@
 
 <script>
 import Cookies from 'js-cookie'
+// 中央事件
+import Bridge from '../../assets/js/bridge.js'
 export default {
   data () {
     return {
       locale: Cookies.get('language') || 'EN',
       homeTexts:this.$i18n.t('home'),
-      navIndex: ""
+      navIndex: "",
+      sources:''
     }
   },
   watch: {
     locale (val) {
-    	console.log(val)
+    	// console.log(val)
     	Cookies.set('language', val)
       this.$i18n.locale = val
       this.homeTexts = this.$i18n.t('home')
+      // 向banner组件中传白皮书地址
+      var msg = Cookies.get('language') == 'CH' ? JSON.parse(Cookies.get('source')).whitePaperUrlCn : JSON.parse(Cookies.get('source')).whitePaperUrlEn
+      console.log(JSON.parse(Cookies.get('source')))
+      this.sendToBanner(msg);
+
     }
   },
   create(){
@@ -85,8 +93,15 @@ export default {
 
   },
   methods:{
+    //  兄弟组件传参
+    sendToBanner:function(val){
+      Bridge.$emit('msg',val)
+    }, 
+    sendToVideo:function(val){
+      Bridge.$emit('videoUrl',val)
+    },
   	routerLink(index, path) {
-  		console.log(index)
+  		// console.log(index)
 	  // 点击哪个路由就赋值给自定义的下下标
 	  this.navIndex = index;
 	  console.log(this.navIndex)

@@ -16,7 +16,8 @@ export default {
         slogan: '打造全球食品检测共享生态',
         logo: 'IFOODS CHAIN',
         description: '基于区块链技术、智能合约、DAI、智能设备等技术开发Ifoods chain公链。Ifoods chain为消费者提供快速检测食品安全质量数据的手段，保护食品检测专家的权益，推动食品安全事业的发展。',
-        whitePaperUrl:'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/whitepaper/whitepaper_20180607_cn.pdf',
+        // whitePaperUrl:'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/whitepaper/whitepaper_20180607_cn.pdf',
+        whitePaperUrl:'{0}',
         whitePaper: '查看白皮书'
       },
       banner2: {

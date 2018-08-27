@@ -10,7 +10,7 @@
                         <h3>{{$t('home.banner.banner1.slogan')}}</h3>
                         <h1>IFOODS CHAIN</h1>
                         <p>{{$t('home.banner.banner1.description')}}</p >
-                        <a :href="$t('home.banner.banner1.whitePaperUrl')"  target="_blank" class="btn btn-default btn-sm-outline" role="button">{{$t('home.banner.banner1.whitePaper')}}</a>
+                        <a :href="$t('home.banner.banner1.whitePaperUrl', [sources])"  target="_blank" class="btn btn-default btn-sm-outline" role="button">{{$t('home.banner.banner1.whitePaper')}}</a>
                     </div>
                 </div>
             </div>
@@ -33,37 +33,43 @@
 </template>
 
 <script>
-import Swiper from 'swiper'
+// import Swiper from 'swiper'
+import Cookies from 'js-cookie'
 import owlCarousel from '../../../static/js/owl.carousel.min.js'
+import Bridge from '../../assets/js/bridge.js'
 export default {
  data(){
       return {
-      mySwiper:''
+      mySwiper:'',
+      sources: Cookies.get('language') == 'CH' ? JSON.parse(Cookies.get('source')).whitePaperUrlCn : JSON.parse(Cookies.get('source')).whitePaperUrlEn
     }
   },
+  created(){
+
+  },
   methods: {
-       _initSwiper() {
-        // let Swiper = swiperAsync; //异步加载的
-        const container = this.$refs.swiper; //ref='swiper'
-        const pagination= this.$refs.pagination;
-        const config = {  //swiper的参数配置
+      //  _initSwiper() {
+      //   // let Swiper = swiperAsync; //异步加载的
+      //   const container = this.$refs.swiper; //ref='swiper'
+      //   const pagination= this.$refs.pagination;
+      //   const config = {  //swiper的参数配置
 
-          slidesPerView: 'auto',
-          centeredSlides: true,
-          initialSlide: this.activeIndex,
-          loop: true,
-          autoplay: 1000,
-          speed: 1000,
-          paginationClickable :true,
-          observer: true ,
-          pagination: {
-            el:pagination,
-            clickable :true
-          },
+      //     slidesPerView: 'auto',
+      //     centeredSlides: true,
+      //     initialSlide: this.activeIndex,
+      //     loop: true,
+      //     autoplay: 1000,
+      //     speed: 1000,
+      //     paginationClickable :true,
+      //     observer: true ,
+      //     pagination: {
+      //       el:pagination,
+      //       clickable :true
+      //     },
 
-        };
-        this.mySwiper = new Swiper(container, config);
-      },
+      //   };
+      //   this.mySwiper = new Swiper(container, config);
+      // },
       hero_slider_carousel() {
         var owl = $("#hero-slider-screen");
         owl.owlCarousel({
@@ -84,8 +90,12 @@ export default {
     }
     },
     mounted(){
-      this._initSwiper();
+      // this._initSwiper();
       this.hero_slider_carousel();
+      Bridge.$on('msg',(e)=>{
+        // alert(e)
+        this.sources = e;
+      })   
     },
 
 }
