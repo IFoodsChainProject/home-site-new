@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-  <!--   <img src="./assets/logo.png"> -->
     <router-view/>
   </div>
 </template>
@@ -26,7 +25,6 @@ export default {
                  if(res){
                    res=JSON.parse(res)
                    if(res.country_id == 'cn'){
-
                         // 国内访问
                         var source = {
                           whitePaperUrlCn:'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/whitepaper/whitepaper_20180607_cn.pdf',
@@ -35,6 +33,7 @@ export default {
                           videoEn:'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/videos/ifoodschain-en.mp4'
                         }
                         Cookies.set('source', JSON.stringify(source))
+                        Cookies.set('countryId',res.country_id) 
 
                       }else{
                         // 国外访问
@@ -45,7 +44,6 @@ export default {
                           videoEn:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/videos/ifoodschain-en.mp4'
                         }
                         Cookies.set('source', JSON.stringify(source))
-                        // alert(JSON.stringify(source))
                       }
                     }
                   }
@@ -54,9 +52,9 @@ export default {
     },
     mounted(){
      this.$nextTick(function () {
-       setTimeout(function () {
-         document.body.removeChild(document.getElementById('wrapper-loading'))
-       },1000)
+         setTimeout(function () {
+           document.body.removeChild(document.getElementById('wrapper-loading'))
+         },1000)
      })
    }
 }
