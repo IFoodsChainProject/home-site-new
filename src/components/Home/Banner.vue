@@ -40,7 +40,7 @@ export default {
  data(){
       return {
       mySwiper:'',
-      sources: this.$i18n.locale  == 'CH' ? 'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/whitepaper/whitepaper_20180607_cn.pdf' : 'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/whitepaper/whitepaper_20180604_en.pdf'
+      sources: this.$i18n.locale  == 'CH' ? 'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/whitepaper/whitepaper_20180607_cn.pdf' : 'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/whitepaper/whitepaper_20180827_en.pdf'
     }
   },
   created(){
@@ -99,7 +99,7 @@ export default {
       // Bridge.$on('msg',(e)=>{
       //   // alert(e)
       //   this.sources = e;
-      // })   
+      // })
     },
 
 }

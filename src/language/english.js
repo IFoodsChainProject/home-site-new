@@ -29,7 +29,7 @@ export default {
 				logo:'IFOODS CHAIN',
 				description:'Based on the blockchain technology, DAI and intelligent device, Ifoods chain provides a platform for fast food detection and protects food safety.',
 				whitePaperUrl:'{0}',
-        // whitePaperUrl:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/whitepaper/whitepaper_20180604_en.pdf',
+        // whitePaperUrl:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/whitepaper/whitepaper_20180827_en.pdf',
         whitePaper:'White Paper'
 			},
 			banner2: {
