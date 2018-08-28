@@ -16,7 +16,7 @@ export default {
         var that = this;
         $.ajax({
           url:'https://www.ifoodschain.com/officialWebsite/getcountryid',
-          type:'get',
+          type:'GET',
                 // xhrFields:{
                 //     withCredentials:  true
                 // },
@@ -26,6 +26,7 @@ export default {
                  if(res){
                    res=JSON.parse(res)
                    if(res.country_id == 'cn'){
+
                         // 国内访问
                         var source = {
                           whitePaperUrlCn:'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/whitepaper/whitepaper_20180607_cn.pdf',
@@ -34,15 +35,17 @@ export default {
                           videoEn:'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/videos/ifoodschain-en.mp4'
                         }
                         Cookies.set('source', JSON.stringify(source))
+
                       }else{
                         // 国外访问
                         var source = {
                           whitePaperUrlCn:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/whitepaper/whitepaper_20180607_cn.pdf',
-                          whitePaperUrlEn:'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/whitepaper/whitepaper_20180604_en.pdf',
+                          whitePaperUrlEn:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/whitepaper/whitepaper_20180604_en.pdf',
                           videoCn:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/videos/ifoodschain-cn.mp4',
-                          videoEn:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/whitepaper/whitepaper_20180604_en.pdf'
+                          videoEn:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/videos/ifoodschain-en.mp4'
                         }
                         Cookies.set('source', JSON.stringify(source))
+                        // alert(JSON.stringify(source))
                       }
                     }
                   }

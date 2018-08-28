@@ -29,7 +29,6 @@
         </div>
     </div>
     <!-- End Hero Section -->
-
 </template>
 
 <script>
@@ -41,13 +40,18 @@ export default {
  data(){
       return {
       mySwiper:'',
-      sources: Cookies.get('language') == 'CH' ? JSON.parse(Cookies.get('source')).whitePaperUrlCn : JSON.parse(Cookies.get('source')).whitePaperUrlEn
+      sources: this.$i18n.locale  == 'CH' ? 'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/whitepaper/whitepaper_20180607_cn.pdf' : 'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/whitepaper/whitepaper_20180604_en.pdf'
     }
   },
   created(){
-
+    this.getWhitePaperUrl();
   },
   methods: {
+      getWhitePaperUrl:function(){
+         var sources = JSON.parse(Cookies.get('source'));
+         this.sources = Cookies.get('language') == 'CH' ? sources.whitePaperUrlCn : sources.whitePaperUrlEn
+         console.log(this.sources)
+      },
       //  _initSwiper() {
       //   // let Swiper = swiperAsync; //异步加载的
       //   const container = this.$refs.swiper; //ref='swiper'
@@ -92,10 +96,10 @@ export default {
     mounted(){
       // this._initSwiper();
       this.hero_slider_carousel();
-      Bridge.$on('msg',(e)=>{
-        // alert(e)
-        this.sources = e;
-      })   
+      // Bridge.$on('msg',(e)=>{
+      //   // alert(e)
+      //   this.sources = e;
+      // })   
     },
 
 }

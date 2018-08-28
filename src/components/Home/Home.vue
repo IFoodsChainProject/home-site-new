@@ -527,7 +527,10 @@ import Bridge from '../../assets/js/bridge.js'
     data() {
       return {
         loading:true,
-        sources:''
+        sources:{
+          videoCn:"https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/videos/ifoodschain-cn.mp4",
+          videoEn:"https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/videos/ifoodschain-en.mp4"
+        }
       }
     },
     created(){
@@ -540,7 +543,7 @@ import Bridge from '../../assets/js/bridge.js'
     methods: {
       getVideoUrl:function(){
          this.sources = JSON.parse(Cookies.get('source'));
-         console.log(this.sources)
+         // console.log(this.sources)
       },
       navStyle() {
         $(window).scroll(function () {
