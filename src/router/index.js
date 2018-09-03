@@ -20,7 +20,7 @@ const router =new Router({
       path: '/',
       name: 'HelloWorld',
       meta: {
-          requireCountry: true // 添加该字段，表示进入这个路由是需要登录的
+          requireCountry: true // 添加该字段，表示进入这个路由是需要判断
       },
       component: HelloWorld
     },
@@ -68,12 +68,57 @@ const router =new Router({
 })
  router.beforeEach((to, from, next) => {
   if (to.meta.requireCountry) {  // 根据国家判断是否显示官网
-      if ( Cookies.get('countryId') !== 'cn') {  // 通过cookies获取countryId，非国内访问展示首页
-        next();
-      }
-      else {
-        window.location.href = '../../static/noAccess.html'; 
-      }
+      // if ( Cookies.get('countryId') !== 'cn') {  // 通过cookies获取countryId，非国内访问展示首页
+      //   next();
+      // }
+      // else {
+      //   window.location.href = '../../static/noAccess.html'; 
+      // }
+
+    $.ajax({
+      url:'https://www.ifoodschain.com/officialWebsite/getcountryid',
+      type:'GET',
+                  // xhrFields:{
+                  //     withCredentials:  true
+                  // },
+                  // crossDomain:  true,
+                  dataType:'json',
+                  success:function(res){
+                   if(res){
+                     // this.$nextTick(function () {
+                       setTimeout(function () {
+                         document.body.removeChild(document.getElementById('wrapper-loading'))
+                       },1000)
+                     // })
+                     res=JSON.parse(res)
+                     if(res.country_id == 'cn'){
+                          // 国内访问
+                          var source = {
+                            whitePaperUrlCn:'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/whitepaper/whitepaper_20180607_cn.pdf',
+                            whitePaperUrlEn:'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/whitepaper/whitepaper_20180827_en.pdf',
+                            videoCn:'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/videos/ifoodschain-cn.mp4',
+                            videoEn:'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/videos/ifoodschain-en.mp4'
+                          }
+                          Cookies.set('source', JSON.stringify(source))
+                          Cookies.set('countryId',res.country_id) 
+                          to.meta.requireCountry = false;
+                          window.location.href = '../../static/noAccess.html'; 
+                          
+                        }else{
+                          // 国外访问
+                          var source = {
+                            whitePaperUrlCn:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/whitepaper/whitepaper_20180607_cn.pdf',
+                            whitePaperUrlEn:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/whitepaper/whitepaper_20180827_en.pdf',
+                            videoCn:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/videos/ifoodschain-cn.mp4',
+                            videoEn:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/videos/ifoodschain-en.mp4'
+                          }
+                          Cookies.set('source', JSON.stringify(source))
+                          to.meta.requireCountry = false;
+                          next();
+                        }
+                      }
+                    }
+                  });
   }
   else {
     next();

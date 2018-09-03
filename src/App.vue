@@ -8,7 +8,7 @@
   import Cookies from 'js-cookie'
 export default {
      created:function(){
-       this.getSources();
+       // this.getSources();
      },
     methods:{
       getSources:function(){
@@ -34,6 +34,7 @@ export default {
                         }
                         Cookies.set('source', JSON.stringify(source))
                         Cookies.set('countryId',res.country_id) 
+                        
 
                       }else{
                         // 国外访问
