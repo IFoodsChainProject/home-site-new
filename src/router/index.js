@@ -72,7 +72,7 @@ const router =new Router({
       //   next();
       // }
       // else {
-      //   window.location.href = '../../static/noAccess.html'; 
+      //   window.location.href = '../../static/noAccess.html';
       // }
 
     $.ajax({
@@ -95,20 +95,20 @@ const router =new Router({
                           // 国内访问
                           var source = {
                             whitePaperUrlCn:'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/whitepaper/whitepaper_20180607_cn.pdf',
-                            whitePaperUrlEn:'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/whitepaper/whitepaper_20180827_en.pdf',
+                            whitePaperUrlEn:'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/whitepaper/whitepaper_20180920_en.pdf',
                             videoCn:'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/videos/ifoodschain-cn.mp4',
                             videoEn:'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/videos/ifoodschain-en.mp4'
                           }
                           Cookies.set('source', JSON.stringify(source))
-                          Cookies.set('countryId',res.country_id) 
+                          Cookies.set('countryId',res.country_id)
                           to.meta.requireCountry = false;
-                          window.location.href = '../../static/noAccess.html'; 
-                          
+                          window.location.href = '../../static/noAccess.html';
+
                         }else{
                           // 国外访问
                           var source = {
                             whitePaperUrlCn:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/whitepaper/whitepaper_20180607_cn.pdf',
-                            whitePaperUrlEn:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/whitepaper/whitepaper_20180827_en.pdf',
+                            whitePaperUrlEn:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/whitepaper/whitepaper_20180920_en.pdf',
                             videoCn:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/videos/ifoodschain-cn.mp4',
                             videoEn:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/videos/ifoodschain-en.mp4'
                           }
@@ -123,6 +123,6 @@ const router =new Router({
   else {
     next();
   }
-  
+
  });
 export default router;
