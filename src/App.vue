@@ -14,7 +14,7 @@ export default {
       getSources:function(){
         var that = this;
         $.ajax({
-          url:'https://www.ifoodschain.com/officialWebsite/getcountryid',
+          url:'https://api.ifoodschain.com/public/getcountryid',
           type:'GET',
                 // xhrFields:{
                 //     withCredentials:  true
@@ -23,8 +23,7 @@ export default {
                 dataType:'json',
                 success:function(res){
                  if(res){
-                   res=JSON.parse(res)
-                   if(res.country_id == 'cn'){
+                   if(res.data.country_id == 'cn'){
                         // 国内访问
                         var source = {
                           whitePaperUrlCn:'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/whitepaper/whitepaper_20180607_cn.pdf',
@@ -52,11 +51,11 @@ export default {
       }
     },
     mounted(){
-     this.$nextTick(function () {
-         setTimeout(function () {
-           document.body.removeChild(document.getElementById('wrapper-loading'))
-         },1000)
-     })
+    //  this.$nextTick(function () {
+    //      setTimeout(function () {
+    //        document.body.removeChild(document.getElementById('wrapper-loading'))
+    //      },1000)
+    //  })
    }
 }
 </script>
