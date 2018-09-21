@@ -76,7 +76,7 @@ const router =new Router({
       // }
 
     $.ajax({
-      url:'https://www.ifoodschain.com/officialWebsite/getcountryid',
+      url:'https://api.ifoodschain.com/public/getcountryid',
       type:'GET',
                   // xhrFields:{
                   //     withCredentials:  true
@@ -90,8 +90,7 @@ const router =new Router({
                          document.body.removeChild(document.getElementById('wrapper-loading'))
                        },1000)
                      // })
-                     res=JSON.parse(res)
-                     if(res.country_id == 'cn'){
+                     if(res.data.country_id == 'cn'){
                           // 国内访问
                           var source = {
                             whitePaperUrlCn:'https://ifoodschain-home-static-domestic.oss-cn-beijing.aliyuncs.com/whitepaper/whitepaper_20180607_cn.pdf',
