@@ -5,7 +5,7 @@
 		<div>you can't access the webpage from your region</div>
 	</div>
 </template>
-<script type="text/javascript" scoped>
+<style scoped>
 
         body{
             position: relative;
@@ -30,4 +30,4 @@
             box-sizing: border-box;
         }
     
-</script>
+</style>
