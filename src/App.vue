@@ -51,11 +51,11 @@ export default {
       }
     },
     mounted(){
-    //  this.$nextTick(function () {
-    //      setTimeout(function () {
-    //        document.body.removeChild(document.getElementById('wrapper-loading'))
-    //      },1000)
-    //  })
+     this.$nextTick(function () {
+         setTimeout(function () {
+           document.body.removeChild(document.getElementById('wrapper-loading'))
+         },1000)
+     })
    }
 }
 </script>
