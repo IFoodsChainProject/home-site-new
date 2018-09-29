@@ -64,7 +64,7 @@
     },
     methods:{
       downloadApk:function(){
-        window.location.href="https://www.ifoodschain.com/ifood-android-V1.2.2.apk"
+        window.location.href="https://www.ifoodschain.com/download/android/ifood-android-V1.2.2.apk"
       },
       iosDownload:function(){
         this.isAlert = true;
