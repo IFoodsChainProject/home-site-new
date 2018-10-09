@@ -48,54 +48,52 @@
 </template>
 
 <script type="text/javascript">
-  import Top from '../Header/header.vue'
-  import Bottom from '../Footer/Footer.vue'
+import Top from "../Header/header.vue";
+import Bottom from "../Footer/Footer.vue";
 
-  export default {
-    name: 'download',
-    data(){
-       return{
-        isAlert:false
-       }
+export default {
+  name: "download",
+  data() {
+    return {
+      isAlert: false
+    };
+  },
+  components: {
+    Top,
+    Bottom
+  },
+  methods: {
+    downloadApk: function() {
+      window.location.href =
+        "https://www.ifoodschain.com/download/android/ifood-android-V1.2.2.apk";
     },
-    components: {
-      Top,
-      Bottom
-    },
-    methods:{
-      downloadApk:function(){
-        window.location.href="https://www.ifoodschain.com/download/android/ifood-android-V1.2.2.apk"
-      },
-      iosDownload:function(){
-        // this.isAlert = true;
-        // var that = this;
-        // setTimeout(function(){
-        //   that.isAlert = false;
-        // }, 1000)
-        window.location.href='itms-services://?action=download-manifest&url=https://www.ifoodschain.com/download/ios/manifest.plist'
-      }
-    },
-    mounted(){
-
+    iosDownload: function() {
+      // this.isAlert = true;
+      // var that = this;
+      // setTimeout(function(){
+      //   that.isAlert = false;
+      // }, 1000)
+      window.location.href =
+        "itms-services://?action=download-manifest&url=https://www.ifoodschain.com/download/ios/manifest.plist";
     }
-  }
+  },
+  mounted() {}
+};
 </script>
 
 <style scoped>
-
-
-.dialog-tips{
-    position: fixed;
-    z-index: 100;
-    min-width: 220px;
-    padding: 40px 22px;
-    white-space: nowrap;
-    background-color:rgba(0,0,0,.8);
-    box-shadow: 0px 8px 15px 0 rgba(0, 0, 0, 0.1);
-    text-align: center;
-     transition: all .3s ease;
-     color: #fff;
-     border-radius: 4px;
+.dialog-tips {
+  position: fixed;
+  z-index: 100;
+  min-width: 220px;
+  padding: 40px 22px;
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 8px 15px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+  color: #fff;
+  border-radius: 4px;
 }
 /*    .dialog-tips-icon{
         width: 54px;
@@ -104,88 +102,90 @@
         margin-bottom: 13px;
     }*/
 .dialog-center {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.download{
-  background:#ddd;
+.download {
+  background: #ddd;
 }
-  .background{
-    background: url("../../assets/images/bg.png");
-   background-size: 100% 100%;
-  }
-  .phone {
-    margin-top: 100px;
-    width: 100%;
-    text-align: center;
-  }
+.background {
+  background: url("../../assets/images/bg.png");
+  background-size: 100% 100%;
+}
+.phone {
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+}
 
-  .phone img {
-    display: inline-block;
-    vertical-align: middle;
-    width: 294px;
-    height: 566px;
-    margin: 0 auto;
-  }
+.phone img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 294px;
+  height: 566px;
+  margin: 0 auto;
+}
 
-  .downloads {
-    margin-top: 200px;
-    width: 100%;
-    /*text-align: center;*/
-  }
+.downloads {
+  margin-top: 200px;
+  width: 100%;
+  /*text-align: center;*/
+}
 
-  .downloads h2 {
-    color: #122a41;
-    margin-bottom: 10px;
-    text-align: left;
-  }
+.downloads h2 {
+  color: #122a41;
+  margin-bottom: 10px;
+  text-align: left;
+}
 
-  .download-con{
-    margin: 40px 0;
-  }
+.download-con {
+  margin: 40px 0;
+}
 
-  /*.downloads div {
+/*.downloads div {
     color: #555d64;
     text-align: left;
   }*/
-  .download-box>div {
-     color: #555d64;
-    text-align: left;
-  }
-  .download-box>div:nth-of-type(1) img{
+.download-box > div {
+  color: #555d64;
+  text-align: left;
+}
+.download-box > div:nth-of-type(1) img {
   width: 140px;
   display: inline-block;
-  }
- .download-btn{
-   display: inline-block;
-       width: 143px;
-    height: 48px;
-    border-radius: 9px;
-    border: 1px solid #122a41;
-    margin: 30px 0 30px;
-    line-height: 48px;
-    text-align: center !important;
-   /*margin: 40px 30px 20px*/
- }
-.download-btn img{
-    width: 19px;
-    height: 23px;
 }
-  .download-btn p{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
-  }
+.download-btn {
+  display: inline-block;
+  width: 143px;
+  height: 48px;
+  border-radius: 9px;
+  border: 1px solid #122a41;
+  margin: 30px 0 30px;
+  line-height: 48px;
+  text-align: center !important;
+  /*margin: 40px 30px 20px*/
+}
+.download-btn img {
+  vertical-align: sub;
+  width: 19px;
+  height: 23px;
+}
+.download-btn p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
 /*.img-btn{
   display: inline-block;
 }*/
-  *{
-    font-family: Helvetica,Tahoma,Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑","华文细黑","宋体",sans-serif;
-  }
-  @media screen and (max-width:480px) {
-.downloads{
-  margin-top: 40px;
+* {
+  font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei",
+    "微软雅黑", "华文细黑", "宋体", sans-serif;
 }
+@media screen and (max-width: 480px) {
+  .downloads {
+    margin-top: 40px;
   }
+}
 </style>
