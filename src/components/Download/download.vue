@@ -24,8 +24,8 @@
                     <!-- <p>{{$t('download.btn1')}}</p> -->
                     <div class="download-btn" @click="downloadApk"><img src="../../assets/images/d4.png" alt=""> {{$t('download.btn1')}}</div>
                   </div>
-<!--                   <div class="download-box  col-xs-6 col-sm-6 col-md-6">
-                    <div><img src="/static/img/d3.png" alt=""></div>
+                  <!-- <div class="download-box  col-xs-6 col-sm-6 col-md-6">
+                    <div><img src="../../assets/images/ios-download.png" alt=""></div>
                     <p>{{$t('download.btn2')}}</p>
                      <div class="download-btn" @click="iosDownload"><img src="/static/img/d2.png" alt=""> {{$t('download.btn2')}}</div>
                   </div> -->
@@ -72,6 +72,7 @@
         setTimeout(function(){
           that.isAlert = false;
         }, 1000)
+        // window.location.href='itms-services://?action=download-manifest&url=https://www.ifoodschain.com/download/ios/manifest.plist'
       }
     },
     mounted(){

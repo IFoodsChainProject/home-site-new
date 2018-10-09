@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/Home/Home.vue'
+import Home from '@/components/Home/Home.vue'
 import Demo from '@/components/demo.vue'
 import Ecology from '@/components/EcoModel/EcoModel.vue'
 import Application from '@/components/Application/Application.vue'
@@ -10,6 +10,7 @@ import News from '@/components/News/News.vue'
 import Team from '@/components/Team/Team.vue'
 import NewDetail from '@/components/News/NewsDetail.vue'
 import Download from '@/components/Download/download.vue'
+import IOSDownload from '@/components/Download/MobileDownload.vue'
  import Cookies from 'js-cookie'
 Vue.use(Router)
 
@@ -18,11 +19,11 @@ const router =new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
+      name: 'Home',
       meta: {
           requireCountry: true // 添加该字段，表示进入这个路由是需要判断
       },
-      component: HelloWorld
+      component: Home
     },
     {
       path:'/ecology',
@@ -63,6 +64,11 @@ const router =new Router({
       path:'/News/detail/:id',
       name:'news-detail',
       component:NewDetail
+    },
+    {
+      path:'/IOSDownload',
+      name:'IOS-download',
+      component:IOSDownload
     }
   ]
 })
