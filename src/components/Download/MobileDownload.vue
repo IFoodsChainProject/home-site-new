@@ -9,7 +9,7 @@
         <img src="../../assets/images/ios-download.png" alt="">
         <button @click="iosDownload">
           <img src="/static/img/d2.png" alt=""> 
-          <span>立即更新</span>
+          <span>立即安装</span>
         </button>
       </section>
     </div>

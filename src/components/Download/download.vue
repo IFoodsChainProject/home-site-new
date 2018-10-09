@@ -24,11 +24,11 @@
                     <!-- <p>{{$t('download.btn1')}}</p> -->
                     <div class="download-btn" @click="downloadApk"><img src="../../assets/images/d4.png" alt=""> {{$t('download.btn1')}}</div>
                   </div>
-                  <!-- <div class="download-box  col-xs-6 col-sm-6 col-md-6">
-                    <div><img src="../../assets/images/ios-download.png" alt=""></div>
-                    <p>{{$t('download.btn2')}}</p>
+                  <div class="download-box  col-xs-6 col-sm-6 col-md-6">
+                    <div><img src="../../assets/images/go-ios-download.png" alt=""></div>
+                    <!-- <p>{{$t('download.btn2')}}</p> -->
                      <div class="download-btn" @click="iosDownload"><img src="/static/img/d2.png" alt=""> {{$t('download.btn2')}}</div>
-                  </div> -->
+                  </div>
                 </div>
 
               <!-- </div> -->
@@ -39,10 +39,10 @@
       </div>
     </div>
           <!-- 全局提示框 -->
-      <div  v-show="isAlert" class="dialog-tips dialog-center">
+      <!-- <div  v-show="isAlert" class="dialog-tips dialog-center"> -->
           <!-- <div>ios端将近期发布</div> -->
-          ios端将近期发布
-      </div>
+          <!-- ios端将近期发布
+      </div> -->
     <bottom></bottom>
   </div>
 </template>
@@ -67,12 +67,12 @@
         window.location.href="https://www.ifoodschain.com/download/android/ifood-android-V1.2.2.apk"
       },
       iosDownload:function(){
-        this.isAlert = true;
-        var that = this;
-        setTimeout(function(){
-          that.isAlert = false;
-        }, 1000)
-        // window.location.href='itms-services://?action=download-manifest&url=https://www.ifoodschain.com/download/ios/manifest.plist'
+        // this.isAlert = true;
+        // var that = this;
+        // setTimeout(function(){
+        //   that.isAlert = false;
+        // }, 1000)
+        window.location.href='itms-services://?action=download-manifest&url=https://www.ifoodschain.com/download/ios/manifest.plist'
       }
     },
     mounted(){
