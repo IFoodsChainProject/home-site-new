@@ -25,9 +25,9 @@
                     <div class="download-btn" @click="downloadApk"><img src="../../assets/images/d4.png" alt=""> {{$t('download.btn1')}}</div>
                   </div>
                   <div class="download-box  col-xs-6 col-sm-6 col-md-6">
-                    <div><img src="../../assets/images/go-ios-download.png" alt=""></div>
+                    <div><img src="../../assets/images/erc20-wallet-ios-qrcode.png" alt=""></div>
                     <!-- <p>{{$t('download.btn2')}}</p> -->
-                     <div class="download-btn" @click="iosDownload"><img src="/static/img/d2.png" alt=""> {{$t('download.btn2')}}</div>
+                    <div class="download-btn" @click="iosDownload"><img src="/static/img/d2.png" alt=""> {{$t('download.btn2')}}</div>
                   </div>
                 </div>
 
@@ -65,7 +65,7 @@ export default {
   methods: {
     downloadApk: function() {
       window.location.href =
-        "https://www.ifoodschain.com/download/android/ifood-android-V1.2.2.apk";
+        "https://www.ifoodschain.com/download/android/ifood-android-V1.2.6.apk";
     },
     iosDownload: function() {
       // this.isAlert = true;
