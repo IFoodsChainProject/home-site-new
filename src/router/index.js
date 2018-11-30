@@ -122,6 +122,18 @@ const router =new Router({
                           next();
                         }
                       }
+                    },
+                    error:function(xhr,state,errorThrown){
+                       // 国外访问
+                      var source = {
+                        whitePaperUrlCn:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/whitepaper/whitepaper_20180607_cn.pdf',
+                        whitePaperUrlEn:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/whitepaper/whitepaper_20180920_en.pdf',
+                        videoCn:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/videos/ifoodschain-cn.mp4',
+                        videoEn:'https://ifoodschain-home-static.oss-ap-northeast-1.aliyuncs.com/videos/ifoodschain-en.mp4'
+                      }
+                      Cookies.set('source', JSON.stringify(source))
+                      to.meta.requireCountry = false;
+                      next();
                     }
                   });
   }
